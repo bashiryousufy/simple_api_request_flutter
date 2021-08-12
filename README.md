@@ -1,6 +1,6 @@
 # simple_api
 
-A new Flutter project.
+A simple flutter News App using public News API.
 
 ## Getting Started
 

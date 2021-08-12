@@ -1,9 +1,10 @@
 import 'package:dio/dio.dart';
 import 'package:simple_api/services/http_service.dart';
+import '../config/APIConfig.dart';
 
 class HttpServiceImp implements HttpService {
   final BASE_URL = "https://newsapi.org/";
-  final API_KEY = "9426d5cea9b8457391de2be05fcad2be";
+  final API_KEY = APIConfig.API_KEY;
   late Dio _dio;
 
   @override
