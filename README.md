@@ -1,6 +1,6 @@
 # simple_api
 
-A simple flutter app that perform API Request.
+A simple flutter News App using public News API.
 
 ## Getting Started
 
