@@ -1,7 +1,7 @@
 import 'package:dio/dio.dart';
 import 'package:simple_api/services/http_service.dart';
 
-const BASE_URL = "http://newsapi.org";
+const BASE_URL = "https://newsapi.org/";
 const API_KEY = "9426d5cea9b8457391de2be05fcad2be";
 
 class HttpServiceImp implements HttpService {
@@ -26,10 +26,12 @@ class HttpServiceImp implements HttpService {
       },
       onRequest: (request, handler) {
         print("${request.method} | ${request.path}");
+        return handler.next(request);
       },
       onResponse: (response, handler) {
         print(
             "${response.statusCode} | ${response.statusMessage} | ${response.data}");
+        return handler.next(response);
       },
     ));
   }
@@ -37,10 +39,7 @@ class HttpServiceImp implements HttpService {
   @override
   void init() {
     _dio = Dio(BaseOptions(
-      baseUrl: BASE_URL,
-      headers: {"Authorization": "Bearer $API_KEY"},
-    ));
-
+        baseUrl: BASE_URL, headers: {"Authorization": "Bearer $API_KEY"}));
     initializeInterceptors();
   }
 }
