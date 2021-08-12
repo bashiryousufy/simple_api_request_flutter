@@ -9,7 +9,7 @@ part of 'news_response_model.dart';
 NewsReponse _$NewsReponseFromJson(Map<String, dynamic> json) {
   return NewsReponse()
     ..status = json['status'] as String
-    ..totalResults = json['totalResults'] as String
+    ..totalResults = json['totalResults'] as int
     ..totalArticles = (json['articles'] as List<dynamic>)
         .map((e) => Article.fromJson(e as Map<String, dynamic>))
         .toList();

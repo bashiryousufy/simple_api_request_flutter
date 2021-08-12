@@ -10,7 +10,7 @@ class NewsReponse {
   late String status;
 
   @JsonKey(name: 'totalResults')
-  late String totalResults;
+  late int totalResults;
 
   @JsonKey(name: 'articles')
   late List<Article> totalArticles;

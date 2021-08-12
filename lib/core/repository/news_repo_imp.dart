@@ -17,7 +17,7 @@ class NewsRepoImp implements NewsRepo {
   Future<List<Article>?> getNewsHeadline() async {
     try {
       final response =
-          await _httpService.getRequest("v2/top-headlines?country=us");
+          await _httpService.getRequest("/v2/top-headlines?country=us");
 
       final parsedResponse = NewsReponse.fromJson(response.data);
       return parsedResponse.totalArticles;
@@ -30,7 +30,7 @@ class NewsRepoImp implements NewsRepo {
   @override
   Future<List<Article>?> getSearchNews(String query) async {
     try {
-      final response = await _httpService.getRequest("v2/everything?q=$query");
+      final response = await _httpService.getRequest("/v2/everything?q=$query");
 
       final parsedReponse = NewsReponse.fromJson(response.data);
 
