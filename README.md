@@ -1,6 +1,6 @@
 # simple_api
 
-A new Flutter project.
+A simple flutter app that perform API Request.
 
 ## Getting Started
 
