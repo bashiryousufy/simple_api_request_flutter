@@ -9,11 +9,11 @@ part of 'article.dart';
 Article _$ArticleFromJson(Map<String, dynamic> json) {
   return Article()
     ..author = json['author'] as String
-    ..description = json['description'] as String
+    ..description = json['description'] as String?
     ..title = json['title'] as String
-    ..imageURL = json['urlToImage'] as String
-    ..newsURL = json['url'] as String
-    ..content = json['content'] as String
+    ..imageURL = json['urlToImage'] as String?
+    ..newsURL = json['url'] as String?
+    ..content = json['content'] as String?
     ..publishedAt = json['publishedAt'] as String;
 }
 

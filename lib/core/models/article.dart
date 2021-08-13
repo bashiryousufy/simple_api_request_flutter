@@ -10,19 +10,19 @@ class Article {
   late String author;
 
   @JsonKey(name: "description")
-  late String description;
+  String? description;
 
   @JsonKey(name: "title")
   late String title;
 
   @JsonKey(name: "urlToImage")
-  late String imageURL;
+  String? imageURL;
 
   @JsonKey(name: "url")
-  late String newsURL;
+  String? newsURL;
 
   @JsonKey(name: "content")
-  late String content;
+  String? content;
 
   @JsonKey(name: "publishedAt")
   late String publishedAt;
