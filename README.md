@@ -1,6 +1,9 @@
 # simple_api
 
 A simple flutter News App using public News API.
+- Features: 
+- 1) News Headline
+- 2) Search News 
 
 ## Getting Started
 
