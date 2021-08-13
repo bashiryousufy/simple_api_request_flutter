@@ -20,4 +20,4 @@ samples, guidance on mobile development, and a full API reference.
 
 ## Screenshots
 
-<img src='/assets/image/Screenshots'>
+<img src='/assets/image/Screenshots/news_headline.png'>
