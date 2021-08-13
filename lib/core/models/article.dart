@@ -7,13 +7,13 @@ class Article {
   Article();
 
   @JsonKey(name: "author")
-  late String author;
+  String? author;
 
   @JsonKey(name: "description")
   String? description;
 
   @JsonKey(name: "title")
-  late String title;
+  String? title;
 
   @JsonKey(name: "urlToImage")
   String? imageURL;
